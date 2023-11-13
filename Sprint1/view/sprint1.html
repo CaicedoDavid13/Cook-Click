@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sprint1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="formulario" method="post">
+        <div id="campos">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" onblur="validarNombre()" />
+            <p id="errorNombre" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campos">
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" type="text" onblur="validarApellidos()" />
+            <p id="errorApellidos" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campos">
+            <label for="correo">Correo</label>
+            <input id="correo" type="email" onblur="validarCorreo()" />
+            <p id="errorCorreo" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campoContraseña">
+            <label for="contrasenna">Contraseña</label>
+            <div id="contrasennaContainer">
+                <input id="contrasenna" type="password" onblur="validarContraseña()" />
+                <button id="verConrtaseña" onclick="verContraseña()">
+                    <i id="iconoContraseña" class="fas fa-eye"></i>
+                </button>
+            </div>
+            <p id="errorContraseña" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campoContraseña">
+            <label for="confirm">Confirmación contraseña</label>
+            <div id="contrasennaContainer2">
+                <input id="confirm" type="password" onblur="confirmarContraseña()" />
+                <button id="verConrtaseña" onclick="verContraseña2()">
+                    <i id="iconoContraseña2" class="fas fa-eye"></i>
+                </button>
+            </div>
+            <p id="errorConfirmacion" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="genero" onclick="validarCheckbox()">
+            <label>Sexo</label><br>
+            <div id="generos">
+                <label for="sexo1">Hombre</label>
+                <input id="sexo1" type="checkbox" name="sexo" />
+                <label for="sexo2">Mujer</label>
+                <input id="sexo2" type="checkbox" name="sexo" />
+                <label for="sexo3">Otro</label>
+                <input id="sexo3" type="checkbox" name="sexo" />
+            </div>
+        </div>
+
+        <div id="campos">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input id="nacimiento" type="date" onblur="validarFecha()" />
+            <p id="errorFecha" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campos">
+            <label for="direccion">Dirección</label>
+            <input id="direccion" type="text" onblur="validarDireccion()" />
+            <p id="errorDireccion" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <div id="campos">
+            <label for="pais">País</label>
+            <select id="pais" name="pais" onblur="validarPais()"></select>
+        </div>
+
+        <div id="campos">
+            <label for="numTarjeta">Numero de tarjeta de crédito</label>
+            <input id="numTarjeta" type="text" onblur="validarTarjeta()" />
+            <p id="errorTarjeta" style="color:red; font-size: 0.8em;"></p>
+        </div>
+
+        <footer>
+            <div id="campos">
+                <div id="notificaciones">
+                    <label>Notificaciones de la página</label>
+                    <input id="notific" type="checkbox" onclick="checkerNotificaciones()" />
+                    <label>Recepción de la revista digital</label>
+                    <input id="recepcion" type="checkbox" onclick="checkerNotificaciones()" />
+                </div>
+            </div>
+            <div id="campos">
+                <input id="enviar" type="submit" value="enviar" onclick="validarEnviar()" />
+                <p id="errorGeneral" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </footer>
+    </form>
+
+    <script src="sprint1.js"></script>
+</body>
+
+</html>
