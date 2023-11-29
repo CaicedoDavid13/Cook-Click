@@ -34,7 +34,6 @@ label {
 
 input {
   width: 90%;
-
   border-radius: 10px;
 }
 
@@ -50,6 +49,7 @@ input {
 #campos div {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -69,6 +69,7 @@ input {
   align-items: center;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #contrasennaContainer input {
@@ -99,6 +100,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #CampoDireccion {
@@ -114,6 +116,10 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+#CampoDireccion div p{
+  width: 100%;
+  text-align: center  ;
 }
 
 #CampoPais {
@@ -217,3 +223,4 @@ input {
     width: 50%;
   }
 }
+
