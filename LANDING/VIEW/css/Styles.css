@@ -1,0 +1,515 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fuente 1 */
+@font-face {
+  font-family: Fuente Texto ;
+  src: url("../fonts/LTCushion-Light.ttf ");   
+}
+
+/* FIN fuente 1 */
+
+/* Fuente 2 */
+@font-face {
+  font-family: Fuente Boton;
+  src: url("../fonts/FontsFree-Net-Akkurat-Bold.ttf");   
+}
+
+/* FIN fuente 2*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: #ceb780 ;
+}
+
+
+/* HEADER --------------------------------------------------------------------------------------------------------------------------------------------- */
+header{
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 1.6em;
+  background: linear-gradient(180deg, #7e6537 0%, #ceb780 100%);
+}
+
+#formularioHead{
+  display: flex;
+  width: 45%;
+  border: solid #dbdbdb 3px;
+  background: linear-gradient(180deg, #ffffff 0%, #eeecec 100%);
+  border-radius: 3px;
+}
+
+#campos{
+  width: 70%;
+  padding: 0.2em;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;  
+  align-content: center;
+}
+
+#campos div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%; 
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#campos div input{
+  width: 100% ;
+  background-color: #dbdbdb;
+  padding: 0.2em;
+  border: 0;
+  border-radius: 22px;
+  transition: .4s ease ;
+  border-radius:3px;  
+  font-family: Fuente Boton;
+}
+
+#campos input:hover{
+  background-color: #9fbef0;
+}
+
+#campos input::placeholder{
+  font-family: Fuente Boton;
+}
+
+
+#Boton{
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+#Boton button{
+  font-family: Fuente Boton;
+  font-size: 100%;
+  border: 0;
+  background-color: #7e6537;
+  height: 44px;
+  border-radius: 22px;
+  transition: 4s ease;
+}
+
+#Boton button a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+#Boton button:hover{
+  background-color: #ceb780;
+}
+
+
+#Envio{
+  width: 75%;
+  height: 35%;
+}
+
+/* FIN HEADER --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SECTION --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+section{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.6em;
+}
+
+#slider{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #ceb780;
+}
+
+#Fotos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#Fotos img{
+  width: 48%;
+  border: solid #dbdbdb 3px;
+  transition: opacity 0.5s ease-in-out;
+  background-color: white;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+#selectorSlider{
+  padding-top: 1em;
+  width: 15%;
+}
+
+#minibotones{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+} 
+
+#minibotones button{
+	border-radius:50%;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Fuente Boton;
+	font-size:16px;
+	padding: 5%;
+  outline:none;
+  border: 0;  
+  transition: 0.5s linear ;
+}
+
+#minibotones button:hover {
+	background:linear-gradient(to bottom, #3a80d6 5%, #7892c2 100%);  
+}
+
+#Frase{
+  font-family: Fuente Texto ;
+  background-color: #535353;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+#Frase h3{
+  letter-spacing: 0.45em;
+  color: #FEFEFE;
+  text-shadow: 1px 1px black;
+  transition: 0.4s ease;
+}
+
+#Frase h3:hover{
+  color: black;
+  text-shadow: 0.6px 0.6px #FFF;
+}
+
+#ZonaBaja{
+  background-color: #ceb780;
+  width: 100%;
+}
+
+#TextoCajas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: black;
+}
+
+#TextoCajas P{
+  font-family: Fuente Texto;
+  text-shadow: 1px 1px #FEFEFE;
+  font-size: 1.2em;
+  width: 60%;
+}
+
+#cajas{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  font-family: FuenteFrase ;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#caja1{
+  width: 15%;
+  text-align: center;
+}
+
+#caja1 img{
+  width: 90%;
+  border-radius:70%;
+  margin-bottom: 1em;
+  border: solid 3px #dbdbdb;
+  transition: .4s ease;
+}
+#caja1 img:hover{
+  width: 100%;
+}
+
+#caja2{
+  width: 15%;
+  text-align: center;
+}
+
+#caja2 img{
+  width: 97%;
+  border-radius:70%;
+  margin-bottom: 1em;
+  border: solid 3px #dbdbdb;
+  transition: .4s ease;
+}
+#caja2 img:hover{
+  width: 107%;
+}
+
+#caja3{
+  width: 15%;
+  text-align: center;
+}
+
+#caja3 img{
+  width: 97%;
+  border-radius:70%;
+  margin-bottom: 1em;
+  border: solid 3px #dbdbdb;
+  transition: .4s ease;
+}
+#caja3 img:hover{
+  width: 107%;
+}
+
+#caja4{
+  width: 15%;
+  text-align: center;
+}
+#caja4 img{
+  width: 97%;
+  border-radius:70%;
+  margin-bottom: 1em;
+  border: solid 3px #dbdbdb;
+  transition: .4s ease;
+}
+
+#caja4 img:hover{
+  width: 107%;
+}
+
+#VolverPrincipio{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#VolverPrincipio a{
+  text-decoration: none;
+}
+
+#VolverPrincipio span{
+  font-size: 2em;
+  color: #535353;
+}
+
+#LlamadaAtencion{
+  font-family: Fuente Frase;
+  width: 100%;
+  display: flex;
+  padding-top: 0.2em;
+  justify-content: center;
+  font-size: 1.3em;
+  color: #FFFFFF;
+}
+
+
+/* FIN SECTION --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* FOOTER --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+  width: 100%;
+  display: flex;
+  background: linear-gradient(180deg,#ceb780  1.4em, #7e6537 100%);
+  padding-top: 0.2em;
+  padding-bottom: 1.6em;
+}
+
+footer div{
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#redes{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#redes a{
+  text-decoration: none;
+  color: black;
+}
+
+#Privacidad{
+  margin-top: 1em;
+  width: 100%;
+}
+
+#Privacidad a{
+  text-decoration: none;
+  color: black;
+}
+
+#Cookies a{
+  text-decoration: none;
+  color: black;
+}
+
+#numtlfn{
+  width:  100%;
+  text-align: center;
+}
+
+#numtlfn a{
+  text-decoration: none;
+  color: black;
+}
+
+#EmailDiv{
+  width: 100%; 
+  text-align: center;
+}
+
+#EmailDiv  a{
+  text-decoration: none;
+  color: black;
+}
+
+/* PARTE DE MOVIL CSS-------------------------------------------------------------------------------------*/
+
+#Movil{
+  display: none;
+}
+
+/*------------------------------------------HEADER------------------------------------------------------*/
+#header { /*general del header*/
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(180deg, #7e6537 0%, #ceb780 100%);
+}
+#Titulo{/*En esta caja están el h2 del título y el párrafo con la frase*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+ 
+}
+#Titulo h2{/*Título*/
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: Fuente texto;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+#logo {/*En esta caja está el logo del hotel*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;   
+}
+#imgL {/*Logo del hotel*/
+  width: 100%;
+}
+
+
+/*----------------------------------------SECTION----------------------------------------------------------*/
+#section {/*General del section*/
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  overflow: hidden;
+}
+#imagen {/*Imagen principal del section*/
+  width: 100%;
+  height: 77vh; 
+}
+/*----------------------------------------FOOTER----------------------------------------------------------*/
+#footer{
+  background: linear-gradient(180deg,#ceb780  1.4em, #7e6537 100%);
+}
+#formularioMovil {/*General del formulario*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#camposMovil {/*input del formulario*/
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 17px;
+  
+}
+#camposMovil input {/*campos input*/
+  width: 90%;
+  margin-bottom: 10px; 
+  margin-left: 1%;
+  border-radius: 7px;
+}
+#pie {/*boton submit y frase*/
+ width: 50%;
+ box-sizing: border-box;
+}
+#BotonEnviar{
+  width: 100%;
+  display: flex;
+  justify-content:left;
+}
+#enviar{
+  border-radius: 25px;
+  margin-left: 10%;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+#pie h3{/*Frase*/
+  font-family: Fuente texto;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+
+/* FIN FOOTER --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 450px) {
+
+  header{
+    display: none;
+  }
+  section{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+  #Movil{
+    display: block;
+  }
+}
+

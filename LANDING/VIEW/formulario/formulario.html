@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="formulario" method="post">
+        <div id="campos">
+            <label for="nombre">Nombre <span style="color:red; font-size: 0.8em;">*obligatorio</span></label>
+            <div>
+                <input id="nombre" type="text" onblur="validarNombre()"/>
+                <p id="errorNombre" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </div>
+
+        <div id="campos">
+            <label for="apellidos">Apellidos <span style="color:red; font-size: 0.8em;">*obligatorio</span></label>
+            <div>
+                <input id="apellidos" type="text" onblur="validarApellidos()" />
+                <p id="errorApellidos" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </div>
+
+        <div id="campos">
+            <label for="correo">Correo <span style="color:red; font-size: 0.8em;">*obligatorio</span></label>
+            <div>
+                <input id="correo" type="email" onblur="validarCorreo()"/>
+                <p id="errorCorreo" style="color:red; font-size: 0.8em;"></p>
+            </div> 
+        </div>
+
+        <div id="campoContraseña">
+            <label for="contrasenna">Contraseña <span style="color:red; font-size: 0.8em;">*obligatorio</span></label>
+            <div     id="contrasennaContainer">
+                <input id="contrasenna" type="password" onblur="validarContraseña()" />
+                <button id="verConrtaseña" onclick="verContraseña()">
+                    <i id="iconoContraseña" class="fas fa-eye"></i>
+                </button>
+                <p id="errorContraseña" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </div>
+
+        <div id="campoContraseña2">
+            <label for="confirm">Confirmación contraseña <span style="color:red; font-size: 0.8em;">*obligatorio</span></label>
+            <div id="contrasennaContainer2">
+                <input id="confirm" type="password" onblur="confirmarContraseña()" />
+                <button id="verConrtaseña" onclick="verContraseña2()">
+                    <i id="iconoContraseña2" class="fas fa-eye"></i>
+                    <p id="errorConfirmacion" style="color:red; font-size: 0.8em;"></p>
+                </button>
+            </div> 
+        </div>
+
+        <div id="fecha">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <div>            
+                <input id="nacimiento" type="date" onchange="validarFecha()" />
+                <p id="errorFecha" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </div>
+
+        <div id="CampoDireccion">
+            <label for="direccion">Dirección</label>
+            <div>
+                <input id="direccion" type="text" onchange="validarDireccion()" />
+                <p id="errorDireccion" style="color:red; font-size: 0.8em;"></p>
+            </div>
+        </div>
+
+        <div id="CampoPais">
+            <label for="pais">País</label>
+            <div>
+                <select id="pais" name="pais" onchange="validarPais()"></select>
+            </div>
+        </div>
+
+        <div id="tarjeta">
+            <label for="DNI">DNI</label>
+            <div>
+                <input id="DNI" type="text" onchange="validarDNI()" />
+                <p id="errorDni" style="color:red; font-size: 0.8em;"></p>
+                
+            </div>
+        </div>
+
+        <div id="genero" onclick="validarCheckbox()">
+            <label>Sexo</label><br>
+            <div id="generos">
+                <label>Hombre</label>
+                <input id="sexo" type="checkbox" name="sexo" />
+                <label>Mujer</label>
+                <input id="sexo" type="checkbox" name="sexo" />
+                <label>Otro</label>
+                <input id="sexo" type="checkbox" name="sexo" />
+            </div>
+        </div>
+
+        <div id="campos5">
+            <div id="notificaciones">
+                <label>Notificaciones de la página</label>
+                <div>
+                    <input id="notific" type="checkbox" onclick="checkerNotificaciones()" />
+                </div>
+            </div>
+            <div id="Revista">
+                <label>Recepción de la revista digital</label>
+                <div>
+                    <input id="recepcion" type="checkbox" onclick="checkerNotificaciones()" />
+                </div>     
+            </div>
+        </div>
+        
+        <div id="campos">
+            <input id="enviar" type="submit" value="enviar" onclick="validarEnviar()" />
+            <p id="errorGeneral" style="color:red; font-size: 0.8em;"></p>
+        </div>
+        
+
+    </form>
+
+    <script src="formulario.js"></script>
+</body>
+
+</html>

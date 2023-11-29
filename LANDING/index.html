@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="VIEW/css/Styles.css">
+    <link rel="stylesheet" href="VIEW/icon/style.css">
+</head>
+<body>
+
+     <header>
+        <img src="VIEW/image/logo.png" alt="" width="50%">
+        <form action="VIEW/formulario/formulario.html" method="post" id="formularioHead">
+
+            <div id="campos">
+                <div>
+                    <input id="nombre" name="nombre" type="text" placeholder="nombre" onblur="validarNombre()"/>
+                    <p id="errorNombre" style="color:red; font-size: 0.8em;"></p>
+                </div>
+                <div>
+                    <input id="correo" name="correo" type="email" placeholder="E-mail" onblur="validarCorreo()" />
+                    <p id="errorCorreo" style="color:red; font-size: 0.8em;"></p>
+                </div> 
+            </div>
+
+            <div id="Boton">
+                <button id="Envio"><a href="VIEW/formulario/formulario.html">Únete</a></button>
+            </div>
+        </form>
+    </header>
+
+    <section>
+        <div id="slider">
+
+            <div id="Fotos">
+                <img src="VIEW/image/hotel1.JPG" alt="" id="Foto">
+            </div>
+
+            <div id="selectorSlider">
+                <div id="minibotones">
+                    <button onclick="CambiarImagenBotonUno()" id="boton1"></button>
+                    <button onclick="CambiarImagenBotonDos()" id="boton2"></button>
+                    <button onclick="CambiarImagenBotonTres()" id="boton3"></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Frase"><h3>HOTEL SAN FRANCISCO, REDESCÚBRETE A TI MISMO</h3></div>
+
+        <div id="ZonaBaja">
+
+            <div id="TextoCajas">
+                <p>
+                    Bienvenido al Hotel San Francisco, tu destino exclusivo en el <b>corazón de Madrid</b>  . 
+                    Descubre el confort y la distinción en nuestras <b>habitaciones de lujo</b>.
+                    Disfruta de una experiencia única con <b>servicios exclusivos y una ubicación privilegiada</b> que combina 
+                    elegancia y autenticidad en la capital española. En el Hotel San Francisco, ofrecemos <b>mucho más que lujo</b>, 
+                    brindamos una estancia inigualable para aquellos que buscan lo mejor en <b>hospitalidad y comodidad</b>
+                </p>
+            </div>
+
+            <div id="cajas">
+                <div id="caja1">
+                    <img src="VIEW/image/event.jpg" id="icono1" alt="" >
+                    <p>Eventos</p>
+                </div>
+                
+                <div id="caja2">
+                    <img src="VIEW/image/bedroom9.jpg" id="icono2" alt="" >
+                    <p>Comodidad inigualable</p>
+                </div>
+
+                <div id="caja3">
+                    <img src="VIEW/image/masage.jpg" id="icono3" alt=""  >
+                    <p>Experiencia privilegiada</p>
+                </div>
+
+                <div id="caja4">
+                    <img src="VIEW/image/gameRoom.jpg" id="icono4" alt="" >
+                    <p>Trato específico</p>
+                </div>
+
+            </div>
+
+            <div id="VolverPrincipio">
+                <a><span class="icon-circle-up" onclick="alInicio()"></span></a>
+            </div>
+
+            <div id="LlamadaAtencion">
+                <p>Únete a nuestro club</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div id="redes">
+                <div>
+                    <a href="http://" id="instagram"><span class="icon-instagram"></span></a></div>
+                <div>
+                    <a href="http://" id="Twitter"><span class=" icon-facebook2"></span></a>
+                </div>
+                <div>
+                    <a href="http://" id="Facebook"><span class="icon-twitter"></span></a>
+                </div>
+            </div>
+            <div id="Privacidad">
+                <a href="VIEW/Documentacion legal/privacidad.html">Politca de privacidad</a>
+            </div>
+        </div>
+
+        <div>
+            <div id="numtlfn">
+                <a href="" id="telefono">693 321 536 <span class="icon-phone"></span></a>    
+            </div>
+        </div>
+        
+        <div>
+            <div id="EmailDiv">
+                <a href="" id="e-mail_Footer">hotelSanFrancisco@gmail.com</a>
+            </div>
+            <div id="Cookies">
+                <a href="VIEW/Documentacion legal/cookies.html">Politca de cookies</a>
+            </div>
+        </div>
+
+    </footer> 
+
+    <main id="Movil">
+        <div id="header">
+            <div id="Titulo">
+                <h2>Hotel San Francisco</h2>
+            </div><!--66%-->
+            <div id="logo">
+                <img id="imgL" src="VIEW/image/logoPequeño.png" alt="Logo hotel">
+            </div><!--33%-->
+        </div>
+        <div id="section">
+            <div id="mainFrame">
+                <img id="imagen" alt="Imagen de fondo" src="VIEW/image/fondo.png">
+            </div>
+        </div>
+    
+        <div id="footer">
+            <form id="formularioMovil" method="post" action="VIEW/formulario/formulario.html">
+                <div id="camposMovil">
+                    <input type="text" name="nombre"  placeholder="Nombre" id="inputNombre">
+                    <input type="email" name="email" placeholder="Correo electrónico" id="inputCorreo">
+                </div>
+                <div id="pie">
+                    <div>
+                        <h3>Hotel San Francisco redescúbrete a ti mismo</h3>
+                    </div>
+
+                    <div id="BotonEnviar">
+                        <input id="enviar" type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="VIEW/js/Slider.js"></script>
+</body>
+</html>

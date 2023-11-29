@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(180deg, #7e6537 0%, #ceb780 100%);
+}
+
+#formulario {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 2%;
+  text-align: center;
+  width: 90%;
+}
+
+input {
+  width: 90%;
+
+  border-radius: 10px;
+}
+
+#campos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#campos div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#campoContraseña,
+#campoContraseña2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+#contrasennaContainer,
+#contrasennaContainer2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+#contrasennaContainer input {
+  width: 87%;
+}
+
+#contrasennaContainer2 input {
+  width: 87%;
+}
+
+#verConrtaseña {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform: translateZ(-50%);
+}
+
+#fecha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+  width: 100%;
+}
+
+#fecha div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#CampoDireccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  width: 100%;
+}
+
+#CampoDireccion div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#CampoPais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  width: 100%;
+}
+#CampoPais select {
+  width: 100%;
+  border-radius: 25px;
+}
+
+#CampoPais label {
+  margin-bottom: 0;
+}
+
+#CampoPais div {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#tarjeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+  width: 100%;
+}
+
+#tarjeta div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#genero {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+#genero label {
+  width: 100%;
+}
+
+#generos {
+  display: flex;
+  width: 75%;
+  text-align: center;
+}
+
+#generos label {
+  display: flex;
+  gap: 10px; /* Espacio entre los checkboxes */
+  justify-content: center;
+}
+
+#genero #generos input {
+  width: 10%;
+}
+
+#campos5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+  width: 100%;
+}
+#campos5 div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+}
+#enviar {
+  padding: 10px;
+  background-color: #cca421;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+  body{
+    width: 100%;
+  }
+
+  #formulario {
+    width: 90%;
+  }
+
+  #genero #generos input {
+    width: 50%;
+  }
+}
