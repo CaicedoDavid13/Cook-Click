@@ -1,0 +1,160 @@
+package com.example.sprint1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btnCouple;
+    Button btnFamily;
+    Button btnLoner;
+    Button btnLuxury;
+    Button btnClear;
+
+    LinearLayout vwCouple;
+    LinearLayout vwFamily;
+    LinearLayout vwLoner;
+    LinearLayout vwLuxury;
+    LinearLayout vwClear;
+
+    ImageView img1;
+    ImageView img2;
+    ImageView img3;
+    ImageView img4;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Initialize buttons
+        btnCouple = findViewById(R.id.buttonCouple);
+        btnFamily = findViewById(R.id.buttonFamily);
+        btnLoner = findViewById(R.id.buttonLoner);
+        btnLuxury = findViewById(R.id.buttonLuxury);
+
+        btnClear = findViewById(R.id.buttonClear);
+
+        // Initialize img1
+        img1 = findViewById(R.id.imageCouple);
+        img1.setImageResource(R.drawable.bedroom_8242522_640);
+
+        // Initialize img2
+        img2 = findViewById(R.id.imageFamily);
+        img2.setImageResource(R.drawable.bed_5054985_640);
+
+        // Initialize img3
+        img3 = findViewById(R.id.imageLoner);
+        img3.setImageResource(R.drawable.ai_generated_8254218_640);
+
+        // Initialize img4
+        img4 = findViewById(R.id.imageLuxury);
+        img4.setImageResource(R.drawable.the_fourth_style_of_france_in_the_old_4815309_640);
+
+        // Initialize View1
+        vwCouple = findViewById(R.id.viewCouple);
+        vwCouple.setVisibility(View.GONE);
+
+        // Initialize View2
+        vwFamily = findViewById(R.id.viewFamily);
+        vwFamily.setVisibility(View.GONE);
+
+        // Initialize View3
+        vwLoner = findViewById(R.id.viewLoner);
+        vwLoner.setVisibility(View.GONE);
+
+        // Initialize View4
+        vwLuxury = findViewById(R.id.viewLuxury);
+        vwLuxury.setVisibility(View.GONE);
+
+        vwClear = findViewById(R.id.viewClear);
+        vwClear.setVisibility(View.GONE);
+
+        /* Button 1 */
+        // Set up click listeners
+        btnCouple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vwCouple.setVisibility(View.VISIBLE);
+
+                if (vwCouple.getVisibility() == View.VISIBLE) {
+                    vwFamily.setVisibility(View.GONE);
+                    vwLoner.setVisibility(View.GONE);
+                    vwLuxury.setVisibility(View.GONE);
+                }
+
+                vwClear.setVisibility(View.VISIBLE);
+            }
+        });
+
+        /* Button 2 */
+        btnFamily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vwFamily.setVisibility(View.VISIBLE);
+
+                if (vwFamily.getVisibility() == View.VISIBLE) {
+                    vwCouple.setVisibility(View.GONE);
+                    vwLoner.setVisibility(View.GONE);
+                    vwLuxury.setVisibility(View.GONE);
+                }
+
+                vwClear.setVisibility(View.VISIBLE);
+            }
+        });
+
+        /* Button 3 */
+        btnLoner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vwLoner.setVisibility(View.VISIBLE);
+
+                if (vwLoner.getVisibility() == View.VISIBLE) {
+                    vwCouple.setVisibility(View.GONE);
+                    vwFamily.setVisibility(View.GONE);
+                    vwLuxury.setVisibility(View.GONE);
+                }
+
+                vwClear.setVisibility(View.VISIBLE);
+            }
+        });
+
+        /* Button 4 */
+        btnLuxury.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vwLuxury.setVisibility(View.VISIBLE);
+
+                if (vwLuxury.getVisibility() == View.VISIBLE) {
+                    vwCouple.setVisibility(View.GONE);
+                    vwFamily.setVisibility(View.GONE);
+                    vwLoner.setVisibility(View.GONE);
+                }
+
+                vwClear.setVisibility(View.VISIBLE);
+            }
+        });
+
+        /* Button 5 */
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                vwClear.setVisibility(View.GONE);
+
+                vwCouple.setVisibility(View.GONE);
+                vwFamily.setVisibility(View.GONE);
+                vwLoner.setVisibility(View.GONE);
+                vwLuxury.setVisibility(View.GONE);
+            }
+        });
+
+    }
+}

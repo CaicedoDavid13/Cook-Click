@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="text1">
+        Hotel San Francisco is an iconic hotel where people of all ages can enjoy a few days of disconnection and relaxation within the reach of very few.
+    </string>
+    <string name="text2">
+        The hotel offers full pensions with all kinds of add-ons for disconnection: spa, saunas, massages or meditation sessions; entertainment: dinner shows, theme parties or outdoor activities; and culture: guided tours, historical interpretations or our large library.
+    </string>
+    <string name="couple">Couple</string>
+    <string name="coupleText"></string>
+    <string name="family">Family</string>
+    <string name="familyText"></string>
+    <string name="loner">Loner</string>
+    <string name="lonerText"></string>
+    <string name="luxury">Luxury</string>
+    <string name="luxuryText"></string>
+    <string name="pictures">Pictures</string>
+</resources>

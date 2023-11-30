@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="title" translatable="false">Hotel San Francisco</string>
+    <string name="text1">
+        Hotel San Francisco es un icónico hotel en el que público de todas las edades pueda disfrutar de unos días de desconexión y relajación al alcance de muy pocos.
+    </string>
+    <string name="text2">
+        El hotel ofrece pensiones completas con todo tipo de añadidos para la desconexión: spa, saunas, masajes o sesiones de meditación; el entretenimiento: cenas con espectáculo, fiestas temáticas o actividades al aire libre; y la cultura: visitas guiadas, interpretaciones históricas o nuestra gran biblioteca.
+    </string>
+    <string name="couple">Pareja</string>
+    <string name="coupleText">Un entorno romántico para disfrutar de la compañia de la pareja</string>
+    <string name="family">Familia</string>
+    <string name="familyText">La estancia ideal para una familia ideal</string>
+    <string name="loner">Solitario</string>
+    <string name="lonerText">Disfrute de la tranquilidad de la soledad</string>
+    <string name="luxury">Lujo</string>
+    <string name="luxuryText">La habitación perfecta para los amantes de lo ostentoso</string>
+    <string name="pictures">Imágenes</string>
+</resources>
