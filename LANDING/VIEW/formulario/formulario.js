@@ -263,19 +263,16 @@ function validarNombre() {
   //si el nombre se deja vacio no dejará enviar el formulario con el disable
   if (nombre.trim() === "") {
     inputNombre.style.border = "2px solid red"; //pintamos el borde de la caja
-    disable = true; //desactivamos el boton
     return false;
   } else if (regex.test(nombre)) {
     //si es valido
     console.log("nombre valido");
     error.textContent = ""; //quitamos cualquier mensaje de error
     inputNombre.style.border = ""; //despintamos el borde
-    disable = false; //habilitamos el botón
   } else {
     console.log("nombre no valido");
     error.textContent = "*este campo no cumple los requisitos"; //mensaje de error
     inputNombre.style.border = "2px solid red"; //pintamos el borde
-    disable = true;
   }
   return true;
 }
@@ -291,19 +288,16 @@ function validarApellidos() {
   if (apellido.trim() === "") {
     //si el apellido es vacio pintamos el borde de rojo y desactivamos el boton
     inputApellidos.style.border = "2px solid red";
-    disable = true;
     return false;
   } else if (regex.test(apellido)) {
     //si el apellido es válido se despinta el borde, se quita el mensaje de error y se habilita el boton
     console.log("apellido valido");
     error.textContent = "";
     inputApellidos.style.border = "";
-    disable = false;
   } else {
     console.log("apellido no valido"); //sino mensaje de error y se pinta el borde
     error.textContent = "*este campo no cumple los requisitos";
     inputApellidos.style.border = "2px solid red";
-    disable = true;
   }
   return true;
 }
@@ -320,19 +314,16 @@ function validarCorreo() {
   if (correo.trim() === "") {
     //si el correo es vacio pintamos el borde de rojo y desactivamos el boton
     inputCorreo.style.border = "2px solid red";
-    disable = true;
     return false;
   } else if (regex.test(correo)) {
     //si el correo es válido se despinta el borde, se quita el mensaje de error y se habilita el boton
     console.log("correo valido");
     error.textContent = "";
     inputCorreo.style.border = "";
-    disable = false;
   } else {
     console.log("correo no valido"); //sino mensaje de error y se pinta el borde
     error.textContent = "*este campo no cumple los requisitos";
     inputCorreo.style.border = "2px solid red";
-    disable = true;
   }
   return true;
 }
@@ -352,14 +343,12 @@ function validarContraseña() {
   if (contraseña.trim() === "") {
     //si la contraseña es vacia se pinta el borde de rojo y se desactiva el boton
     inputContrasenna.style.border = "2px solid red";
-    disable = true;
     return false;
   }
   if (contraseña.length < 8) {
     //sino tiene 8 caracteres se pinta el borde, se muestra un mensaje de error y se desactiva el boton
     error.textContent = "*contraseña muy corta, mínimo 8 caracteres";
     inputContrasenna.style.border = "2px solid red";
-    disable = true;
   }
 
   //comprobaciones de mayusculas y minusculas
@@ -368,13 +357,11 @@ function validarContraseña() {
     console.log("contraseña correcta"); //si es correcta se despinta el borde, se quita el mensaje de error y se activa el boton
     error.textContent = "";
     inputContrasenna.style.border = "";
-    disable = false;
   } else {
     //sino, se  pinta el borde, se saca el mensaje y se desactiva el botón
     console.log("contraseña incorrecta");
     errorContraseña.textContent = "*la contraseña no cumple con los requisitos";
     inputContrasenna.style.border = "2px solid red";
-    disable = true;
   }
   return true;
 }
@@ -389,18 +376,15 @@ function confirmarContraseña() {
   if (confirmacion.trim() === "") {
     //si esta vacio se pinta de rojo y se desactiva el boton
     inputContrasenna.style.border = "2px solid red";
-    disable = true;
     return false;
   } else if (confirmacion === contraseña) {
     //si las contraseñas coinciden se despinta el campo, se quita el mensaje y se desativa el boton
     error.textContent = "";
     inputContrasenna.style.border = "";
-    disable = false;
   } else {
     //sino se desactiva el boton, se muestra el mensaje y se pinta el borde
     error.textContent = "*las contraseñas no coinciden";
     inputContrasenna.style.border = "2px solid red";
-    disable = true;
   }
   return true;
 }
